@@ -1,0 +1,5 @@
+#
+---
+geometry_msgs/Point center0
+geometry_msgs/Point center1
+geometry_msgs/Point center2

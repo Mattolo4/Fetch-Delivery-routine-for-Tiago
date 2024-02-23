@@ -1,0 +1,8 @@
+# Goal
+int32 obj_id
+---
+# Result
+bool picked
+---
+# Feedback
+string current_state

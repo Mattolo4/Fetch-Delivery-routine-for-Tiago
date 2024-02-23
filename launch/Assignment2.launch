@@ -1,0 +1,33 @@
+<launch>
+  <!-- Start the simulation -->
+  <include file="$(find tiago_iaslab_simulation)/launch/start_simulation.launch">
+    <arg name="world_name" value="ias_lab_room_full_tables" />
+  </include>
+
+  <!-- AprilTag -->
+  <include file="$(find tiago_iaslab_simulation)/launch/apriltag.launch" />
+
+  <!-- Navigation stack -->
+  <include file="$(find tiago_iaslab_simulation)/launch/navigation.launch" />
+
+  <!-- Human Service node -->
+  <node name="human_node" pkg="tiago_iaslab_simulation" type="human_node" output="screen" />
+
+  <!-- Action server node -->
+  <node name="server" pkg="assignment_2_group_12" type="server" output="screen" />
+
+  <!-- node B aprilTag -->
+  <node name="node_b" pkg="assignment_2_group_12" type="node_b" output="screen" />
+
+  <!-- get_lable_location service -->
+  <node name="node_barrelDetect" pkg="assignment_2_group_12" type="node_barrelDetect" output="screen" />
+
+  <!-- get_barrels_pose service -->
+  <node name="node_barrelScan" pkg="assignment_2_group_12" type="node_barrelScan" output="screen" />
+  
+  <!-- Pick action server -->
+  <node name="node_pick" pkg="assignment_2_group_12" type="node_pick" output="screen" />
+
+  <!-- Place action server -->
+  <node name="node_place" pkg="assignment_2_group_12" type="node_place" output="screen" />
+</launch>

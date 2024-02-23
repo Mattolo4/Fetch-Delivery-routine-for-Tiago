@@ -1,0 +1,3 @@
+int32 obj_idx   # get the obj idx to know the color
+---
+int32 location_idx  # retruns the idx of the location relative table 

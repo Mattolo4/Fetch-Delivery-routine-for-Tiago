@@ -1,0 +1,9 @@
+# Goal
+int32 obj_id
+float32[] placePos
+---
+# Result
+bool placed
+---
+# Feedback
+string currentState
