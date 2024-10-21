@@ -34,7 +34,7 @@ Starting the main node the pick and place procedure will start.
 
 ## Developers
 - [Gabriel Taormina](mailto:gabriel.taormina@protonmail.com) 
-- Stefano Trenti
+- [Stefano Trenti](https://github.com/TrentiStefano)
 - [Matteo Villani](https://github.com/Mattolo4?tab=repositories)
 
 
